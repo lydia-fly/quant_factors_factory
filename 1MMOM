@@ -1,0 +1,5 @@
+def calc_momentum_1m(df):
+    """
+    Calculate 1-month momentum factor
+    """
+    return df['close'] / df['close'].shift(21) - 1
