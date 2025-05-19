@@ -1,0 +1,6 @@
+def calc_reversal_5d(df):
+    """
+    Calculate 5-day short-term reversal factor
+    It takes the negative 5-day return: -pct_change(5)
+    """
+    return - df['close'].pct_change(5)
